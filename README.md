@@ -16,18 +16,30 @@ the corresponding part of the Schläfli symbol. Then just hit ENTER/RETURN to co
 The +/- keys change the radial distance of the pen on to the center of the rolling circle.
 
 ## Toggle Controls
-?: Help Text (Show/Hide basic help text)
-P: Edit P
-Q: Edit Q
-A: Rolling shape (Show/Hide shapes inscribed in rolling circles)
-S: Formation shape (Show/Hide shapes made from formation of rolling cirlces.)
-D: Rollers (Show/Hide inner rolling circles)
-I: Info (Show/Hide info at top-left)
-F: Full Mode (Show just one pen's worth of things or all pens.)
-G: Show/Hide Spirograph approximating ideal polygon
-H: Show/Hide Ideal Polygon of Schläfli Symbol
-T: Trace Mode (Shows movement trace. Can make UI look strange. "I" and "?" hide it.)
-R: Record (saves frames in "./frames" as png files. Can be slow.)
+
+**?**: Help Text (Show/Hide basic help text)
+
+**P**: Edit P
+
+**Q**: Edit Q
+
+**A**: Rolling shape (Show/Hide shapes inscribed in rolling circles)
+
+**S**: Formation shape (Show/Hide shapes made from formation of rolling cirlces.)
+
+**D**: Rollers (Show/Hide inner rolling circles)
+
+**I**: Info (Show/Hide info at top-left)
+
+**F**: Full Mode (Show just one pen's worth of things or all pens.)
+
+**G**: Show/Hide Spirograph approximating ideal polygon
+
+**H**: Show/Hide Ideal Polygon of Schläfli Symbol
+
+**T**: Trace Mode (Shows movement trace. Can make UI look strange. "I" and "?" hide it.)
+
+**R**: Record (saves frames in "./frames" as png files. Can be slow.)
 
 ## Info Panel
 
