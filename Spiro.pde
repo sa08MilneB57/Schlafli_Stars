@@ -144,10 +144,20 @@ class Spiro implements Shape{
   }
   
   void showRoller(float t,boolean full){
+    if(t<0){throw new IllegalArgumentException("t must be greater than 0");}
+    if(t>=getMaxT()){t= t%getMaxT();}
     int wheels = (full)?reducedSides - reducedStep:1;
     float dWheel = TAU/(wheels);
-    for(int i=0;i<wheels;i++){
-      circle((R-r)*cos(t + i*dWheel),(R-r)*sin(t+ i*dWheel),2*r);
+    float dRepeat = TAU/sides;
+    for(int n=0; n<=repeats;n++){
+      if(t<PERIOD){
+        for(int i=0;i<wheels;i++){
+          circle((R-r)*cos(t + i*dWheel + n*dRepeat),(R-r)*sin(t+ i*dWheel + n*dRepeat),2*r);
+        }
+        return;
+      } else {
+        t -= PERIOD;
+      }
     }
   }
   
@@ -163,7 +173,9 @@ class Spiro implements Shape{
     final int detail = 1024;
     final float dt = getMaxT()/(detail+1);
     final float theta = TAU/P;
+    final float dColor = TAU/repeats;
     for (int n=0; n<repeats;n++){
+      stroke(HSL(TAU/3f + n*dColor,1,0.1));
       for(int i=0; i<detail;i++){
         PVector x1 = penAtT(   i *dt, n*theta);
         PVector x2 = penAtT((i+1)*dt, n*theta);
