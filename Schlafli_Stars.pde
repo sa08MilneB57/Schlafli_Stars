@@ -66,10 +66,10 @@ void draw() {
     if(showCircles){spiro.showContainment();}
     if(showSpiro){spiro.show();}
     noFill();
-    stroke(HSL(0, 1, 0.5));
-    if(showQShape1){spiro.showQPoints1((time*relSpeed) % spiro.getMaxT(), POINTSIZE,fullMode);}
     stroke(HSL(PI, 1, 0.5));
     if(showQShape2){spiro.showQPoints2((time*relSpeed) % spiro.getMaxT(), POINTSIZE,fullMode);}
+    stroke(HSL(0, 1, 0.5));
+    if(showQShape1){spiro.showQPoints1((time*relSpeed) % spiro.getMaxT(), POINTSIZE,fullMode);}
     
     noStroke();
     fill(150,10);
