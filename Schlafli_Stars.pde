@@ -72,7 +72,7 @@ void draw() {
     if(showQShape1){spiro.showQPoints1((time*relSpeed) % spiro.getMaxT(), POINTSIZE,fullMode);}
     
     noStroke();
-    fill(150,10);
+    fill(255,8);
     if(showCircles){spiro.showRoller(time*relSpeed,fullMode);}
   popMatrix();
   
